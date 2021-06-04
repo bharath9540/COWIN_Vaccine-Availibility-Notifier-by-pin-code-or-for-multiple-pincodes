@@ -2,7 +2,7 @@
 
 numdays = 6   # Number of days to check Vaccine Availability
 Dose = 1    # Availability of which Dose to check
-Age = 55  # Age of the individual to check vaccine availability, (minimum age for checking)
+Age = 30  # Age of the individual to check vaccine availability, (minimum age for checking)
 
 # Pincodes to check, give pin code number in square brackets with , between each one
 pincodes = [580000,580001]
@@ -17,7 +17,7 @@ def announce(announcement):
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
-    engine.setProperty('rate', 100)
+    engine.setProperty('rate', 110)
     engine.say(announcement)
     engine.runAndWait()
 
